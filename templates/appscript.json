@@ -1,0 +1,9 @@
+{
+  "name": "Apps Script Fullscreen",
+  "files": [
+    {
+      "path": "index.html",
+      "content": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1,viewport-fit=cover\">\n  <meta name=\"theme-color\" content=\"#ffffff\">\n  <title>{{TITLE}}</title>\n  <style>\n    *{box-sizing:border-box}\n    html,body{\n      margin:0;\n      width:100%;\n      height:100%;\n      background:#eee;\n      overflow:hidden;\n    }\n    .iframe-container{\n      width:100%;\n      height:100vh;\n      height:100dvh;\n      overflow:hidden;\n    }\n    iframe{\n      display:block;\n      width:100%;\n      height:100%;\n      border:0;\n      background:#fff;\n    }\n  </style>\n</head>\n<body>\n  <div class=\"iframe-container\">\n    <iframe\n      id=\"app\"\n      src=\"{{APP_URL}}\"\n      title=\"{{TITLE}}\"\n      scrolling=\"yes\"\n      allowfullscreen\n      allow=\"fullscreen; camera; microphone; display-capture; geolocation\"\n      referrerpolicy=\"strict-origin-when-cross-origin\">\n    </iframe>\n  </div>\n</body>\n</html>"
+    }
+  ]
+}
